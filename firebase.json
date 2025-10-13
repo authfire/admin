@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "target": "authfire-admin",
+    "site": "authfire-admin",
     "public": "out",
     "ignore": [
       "firebase.json",
