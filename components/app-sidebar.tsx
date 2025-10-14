@@ -26,8 +26,9 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "@/components/ui/sidebar"
+import { appName } from "@/lib/const"
+import Logomark from "./logomark"
 
-// This is sample data.
 const data = {
   user: {
     name: "shadcn",
@@ -148,11 +149,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <SidebarMenuItem>
             <SidebarMenuButton
               asChild
-              className="data-[slot=sidebar-menu-button]:!p-1.5"
+              size="lg"
+              className="data-[slot=sidebar-menu-button]:!p-1.5 h-11 [&>svg]:size-8"
             >
               <a href="#">
-                #
-                <span className="text-base font-semibold">Acme Inc.</span>
+                <Logomark />
+                <span className="text-2xl font-semibold">{appName}</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
