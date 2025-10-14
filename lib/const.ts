@@ -1,1 +1,1 @@
-export const appName = "authFire"
+export const appName = "AuthFire Admin"
