@@ -2,12 +2,9 @@
 
 import * as React from "react"
 import {
-  AudioWaveform,
   BookOpen,
   Bot,
-  Command,
   Frame,
-  GalleryVerticalEnd,
   Map,
   PieChart,
   Settings2,
@@ -149,12 +146,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <SidebarMenuItem>
             <SidebarMenuButton
               asChild
-              size="lg"
-              className="data-[slot=sidebar-menu-button]:!p-1.5 h-11 [&>svg]:size-8"
             >
               <a href="#">
-                <Logomark />
-                <span className="text-2xl font-semibold">{appName}</span>
+                <Logomark className="!size-6" />
+                <span className="text-2xl font-semibold leading-none">{appName}</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
