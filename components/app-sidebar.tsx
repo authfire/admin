@@ -145,6 +145,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton
+            className="group-data-[collapsible=icon]:p-1!"
               asChild
             >
               <a href="#">
